@@ -1,5 +1,6 @@
 *.o
 client
 server
+ip.txt
 log.txt
 report.txt
