@@ -13,16 +13,17 @@ $ make
 ```
 
 Run the server on a given port. Ensure this port is open if you plan on accepting external clients.
-Provide a static Mastermind secret code if you're boring (4 of {A, B, C, D, E, F}, duplicates allowed).
+You can provide a static secret code if you're boring, otherwise just give it the port.
+The code is 4 chars of the set {A, B, C, D, E, F}, duplicates allowed.
 
 ```sh
-$ ./server [port_number] [default_secret_code]
+$ ./server 1337 BEEF
 ```
 The server should now be running.
 
 Open up a client by providing the hostname and port of the sever.
 ```sh
-$ ./client [host_name/IP_address] [port_number]
+$ ./client localhost 1337
 ```
 
 Have fun!
